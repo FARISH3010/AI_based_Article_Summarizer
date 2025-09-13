@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>AI Article Summarizer</h1>
+      </div>
+      
+      <div class="settings-row">
+        <label for="length-select">Summary Length:</label>
+        <select id="length-select">
+          <option value="short">Short (1-2 sentences)</option>
+          <option value="medium" selected>Medium (3-4 sentences)</option>
+          <option value="long">Long (5+ sentences)</option>
+        </select>
+      </div>
+      
+      <button id="summarize-btn">SUMMARIZE ARTICLE</button>
+      
+      <div class="loading-spinner">
+        <div class="spinner"></div>
+        <div class="loading-text">Ready to summarize</div>
+      </div>
+      
+      <div id="status"></div>
+      <div id="summary-result"></div>
+      
+      <div class="history-section">
+        <h3>Recent Summaries</h3>
+        <div id="history-list"></div>
+        <button id="clear-history" class="secondary-btn">Clear History</button>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
